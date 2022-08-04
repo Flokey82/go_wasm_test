@@ -63,4 +63,5 @@ func (w *Game) Draw(screen *ebiten.Image) {
 			}
 		}
 	}
+	screen.ReplacePixels(w.pixels)
 }

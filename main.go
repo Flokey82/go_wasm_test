@@ -14,8 +14,7 @@ const (
 
 func main() {
 	g := newGame()
-	ebiten.SetFullscreen(true)
-	ebiten.SetWindowSize(width, height)
+	ebiten.SetWindowSize(width*2, height*2)
 	ebiten.SetWindowTitle("Dungeon Crawler")
 	if err := ebiten.RunGame(g); err != nil {
 		log.Fatal(err)
